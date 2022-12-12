@@ -1,0 +1,53 @@
+{
+  "name": "modshot",
+  "version": "0.3.0",
+  "description": "Takes screenshot of UI modules and compare with baselines using PhatomCSS ",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eBay/modshot.git"
+  },
+  "author": "Senthil Padmanabhan <https://twitter.com/senthil_hi>",
+  "license": "MIT",
+  "homepage": "https://github.com/eBay/modshot/blob/master/README.md",
+  "keywords": [
+    "screenshots",
+    "screenshot test",
+    "module screenshots"
+  ],
+  "main": "./lib/modshot.js",
+  "bin": {
+    "modshot": "./bin/modshot.js"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "compile": "grunt build",
+    "lint": "eslint -c ./eslint-config/.eslintrc --ext .es6 --ignore-pattern node_modules ."
+  },
+  "dependencies": {
+    "babel-runtime": "~5.6.7",
+    "casperjs": "~1.1.0-beta3",
+    "lodash": "^4.17.21",
+    "nopt": "~3.0.3",
+    "path": "~0.11.14",
+    "phantomcss": "^1.6.0",
+    "url": "^0.11.0",
+    "util": "~0.10.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "chai": "^3.3.0",
+    "eslint": "^2.0.0",
+    "glob": "^5.0.15",
+    "grunt": "^1.5.3",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-mocha-test": "^0.12.7",
+    "load-grunt-tasks": "^5.0.0",
+    "mocha": "^6.1.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
